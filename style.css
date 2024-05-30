@@ -44,7 +44,22 @@ main {
 }
 .nav-link:hover{
     color: #09ff00;
+    border-bottom: 2px solid transparent;
+    animation: border 0.3s ease-in ;
+}
+@keyframes border {
+   0%{
+    width: 0;
+    border-bottom: 2px solid transparent;
+   } 
+   50%{
+    width: 50%;
     border-bottom: 2px solid tomato;
+   }
+   100%{
+    width: 100%;
+    border-bottom: 2px solid tomato;
+   }
 }
 .navbar-nav{
     width: 80%;
@@ -75,7 +90,7 @@ main {
 #intro .intro-name{
     color: rgb(129, 255, 90);
     font-weight: 600;
-    font-family: cursive;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #intro .intro-domain {   
@@ -140,8 +155,29 @@ main {
     animation-name: gradient-shadow;
     animation-timing-function: ease;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinitec ;
 }
+
+@keyframes gradient-shadow {
+    0% {
+              box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+    }
+    20% {
+              box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+    }
+    40% {
+              box-shadow: 0 0 17px 3px rgb(161, 161, 161),0 0 4px 2px #0f0;
+    }
+    60% {
+              box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+    }
+    80% {
+              box-shadow: 0 0 17px 3px #f00,0 0 4px 2px #f00;
+    }
+    100% {
+              box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+    }
+  }
 
 
 
@@ -176,11 +212,11 @@ main {
 
 }
 .table{
-    box-shadow: 0 14px 28px rgba(100, 100, 100, 0.25), 0 10px 10px rgba(100, 100, 100, 0.22);
+    margin-top: 20px;
 }
 
 table{
-    background-color: #000000;
+    background-color: #212529;
     color: #fdfdfd;
     border-radius: 20px;
 }  
@@ -188,6 +224,7 @@ table td,th{
     color: #fff;
 }
 .table table tr{
+    border-radius: 20px;
     background-color: rgb(10, 10, 18);
     
 }
@@ -198,7 +235,7 @@ table tr td{
 
 tr:hover {
     background-color: #333;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
 #card{
@@ -209,11 +246,13 @@ tr:hover {
 
 
 #skills{
-    margin-top: 20px;
+    margin-top: 50px;
+    
 }
 .skill-card{
+    margin-top: 25px;
     width: 100%;
-    padding: 20px 5px;
+    padding: 20px 20px;
     border-radius: 20px;
     box-shadow: 0 26px 58px 0 rgba(100, 100, 100, 0.22), 0 5px 14px 0 rgba(100, 100, 100, 0.18);
 }
@@ -268,21 +307,22 @@ tr:hover {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 10px;
+    background-color: rgb(12, 12, 12);
   }
   
   .flip-card-front {
-    background-color: transparent;
-    color: rgb(255, 255, 255);
+    
+    border-radius: 10px;
   }
   .flip-card-front h1{
       font-size: 20px;
       padding: 100px 5px;
+      color: rgb(255, 255, 255);
   }
   
   .flip-card-back {
-    background-color: transparent;
     color: white;
-    padding: 20px 5px;
+    padding: 20px 10px;
     transform: rotateY(180deg);
   }
 
@@ -311,7 +351,6 @@ tr:hover {
 
 #projects .card-link{
     width: auto;
-    margin: 0 auto 20px auto;
     text-align: center;
     border: 0px solid #000;
     border-radius: 10px;
@@ -328,12 +367,15 @@ tr:hover {
 }
 
 
+
+
+
 #certificates .card{
     width: 100%;
     height: 350px;
     padding: 3px;
     padding-bottom: 3px;
-    background-color: #333333;
+    background-color: rgb(12, 12, 12);
     color: #fff;
     border-radius: 10px;
     margin-left: 10px;
@@ -341,7 +383,7 @@ tr:hover {
     box-shadow: 0 3px 6px rgba(63, 63, 63, 0.16), 0 3px 6px rgba(87, 87, 87, 0.23);
 }
 #certificates .card:hover{
-    background-color: rgb(82, 82, 82);
+    background-color: rgb(61, 61, 61);
     color: #ffffff;
 }
 
@@ -372,6 +414,9 @@ tr:hover {
     font-family: "poppins";
     font-size: 20px;
     padding: 10px 10px;
+}
+.resume a:hover{
+    color: #e0e0e0;
 }
 
 #contact{
@@ -428,26 +473,7 @@ tr:hover {
     width: 50px;
 }
 
-@keyframes gradient-shadow {
-    0% {
-              box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
-    }
-    20% {
-              box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
-    }
-    40% {
-              box-shadow: 0 0 17px 3px rgb(161, 161, 161),0 0 4px 2px #0f0;
-    }
-    60% {
-              box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
-    }
-    80% {
-              box-shadow: 0 0 17px 3px #f00,0 0 4px 2px #f00;
-    }
-    100% {
-              box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
-    }
-  }
+
 
 
 
