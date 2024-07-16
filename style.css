@@ -21,14 +21,22 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
-    
 }
 
 main {
     flex: 1;
     padding: 2rem;
+    
 }
-
+.bg{
+    /* background-image: url('https://cdn.sanity.io/images/tlr8oxjg/production/22c3b048689e6b8cd048157c7eb3c01cce769a41-1456x816.png?w=3840&q=80&fit=clip&auto=format');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    background-color: rgb(0, 0, 0); */
+}
 .navbar{
     background-color: transparent;
 }
@@ -123,7 +131,7 @@ main {
 .intro-domain span{
     color: #ffc685;
     font-weight: 500;
-    font-family: cursive;;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -193,12 +201,17 @@ main {
     color: #007bff;
     
 }
-.hire p{
+.hire ul{
+    padding-top: 0;
+    padding: 25px;
+}
+.hire ul li{
     font-size: 17px;
-    padding: 2px 20px;
+    padding: 2px 2px;
     text-align: left;
     color: #f9f9f9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-image: url('./icons/learningpath/right-c.svg');
 
 }
 
@@ -209,6 +222,7 @@ main {
 #education{
     max-height: fit-content;
     width: 100%;
+    padding-top: 50px;
 
 }
 .table{
@@ -245,6 +259,9 @@ tr:hover {
 }
 
 
+
+
+
 #skills{
     margin-top: 50px;
     
@@ -264,6 +281,7 @@ tr:hover {
     gap: 50px;
 }
 .skill-card ul li {
+    width: 20%;
     font-size: 22px;
     padding-left: 10px;
 }
@@ -326,6 +344,8 @@ tr:hover {
     transform: rotateY(180deg);
   }
 
+
+
 .projects{
     display: flex;
     flex-direction: row;
@@ -375,7 +395,7 @@ tr:hover {
     height: 350px;
     padding: 3px;
     padding-bottom: 3px;
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(32, 32, 32);
     color: #fff;
     border-radius: 10px;
     margin-left: 10px;
@@ -512,6 +532,7 @@ tr:hover {
         margin-right: 5px;
     }
     .skill-card ul li {
+        width: auto;
         font-size: 10px;
         padding-left: 5px;
     }
